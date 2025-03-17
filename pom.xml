@@ -11,6 +11,8 @@
 
     <modules>
         <module>context</module>
+        <module>tool</module>
+        <module>log</module>
     </modules>
 
     <properties>
