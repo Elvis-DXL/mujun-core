@@ -1,4 +1,4 @@
-package com.mujun.core.tool;
+package com.mujun.core.base.tool;
 
 public final class DSTool {
     private DSTool() {
