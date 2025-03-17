@@ -13,6 +13,7 @@
         <module>context</module>
         <module>tool</module>
         <module>log</module>
+        <module>oss</module>
     </modules>
 
     <properties>
