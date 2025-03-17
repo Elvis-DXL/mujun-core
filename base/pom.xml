@@ -8,17 +8,9 @@
         <artifactId>mujun-core</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <artifactId>context</artifactId>
+    <artifactId>base</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>transmittable-thread-local</artifactId>
-        </dependency>
+
     </dependencies>
 </project>

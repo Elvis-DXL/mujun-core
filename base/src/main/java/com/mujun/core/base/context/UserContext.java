@@ -1,4 +1,4 @@
-package com.mujun.core.context;
+package com.mujun.core.base.context;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

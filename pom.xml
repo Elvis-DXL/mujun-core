@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>context</module>
+        <module>base</module>
         <module>tool</module>
         <module>log</module>
         <module>oss</module>
