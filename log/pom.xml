@@ -11,6 +11,10 @@
     <artifactId>log</artifactId>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.mujun.core</groupId>
+            <artifactId>tool</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
