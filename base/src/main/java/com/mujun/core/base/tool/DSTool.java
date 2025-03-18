@@ -1,7 +1,10 @@
 package com.mujun.core.base.tool;
 
+import cn.hutool.crypto.SecureUtil;
+import cn.hutool.crypto.asymmetric.KeyType;
 import cn.hutool.json.JSONUtil;
 import com.mujun.core.base.enums.DatePattern;
+import com.mujun.core.base.exception.BizException;
 
 import java.lang.reflect.Field;
 import java.text.DecimalFormat;
@@ -135,6 +138,14 @@ public final class DSTool {
             midStr = midStr.concat("*");
         }
         return aimStr.substring(0, start) + midStr + aimStr.substring(aimStr.length() - end);
+    }
+
+    public static String rsaDecryptStr(String aimStr, String pubKey, String priKey) {
+        try {
+            return SecureUtil.rsa(priKey, pubKey).decryptStr(aimStr, KeyType.PrivateKey);
+        } catch (Exception e) {
+            throw new BizException("解密失败", e);
+        }
     }
 
     public static <T> void judgeAdd(List<T> aimList, T aimObj) {
