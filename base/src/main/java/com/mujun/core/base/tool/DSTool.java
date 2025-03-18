@@ -1,5 +1,6 @@
 package com.mujun.core.base.tool;
 
+import cn.hutool.json.JSONUtil;
 import com.mujun.core.base.enums.DatePattern;
 
 import java.lang.reflect.Field;
@@ -225,6 +226,19 @@ public final class DSTool {
             return null;
         }
         return birthdayToAgeByTime(birthday, aimTime);
+    }
+
+    public static <T> String toJson(T aim) {
+        return null == aim ? null : JSONUtil.toJsonStr(aim);
+    }
+
+    public static <T> T parseObj(String aimStr, Class<T> clazz) {
+        return EmptyTool.isEmpty(aimStr) || null == clazz ? null : JSONUtil.toBean(aimStr, clazz);
+    }
+
+    public static <T> List<T> parseList(String aimStr, Class<T> clazz) {
+        return EmptyTool.isEmpty(aimStr) || null == clazz ?
+                new ArrayList<>() : JSONUtil.toList(JSONUtil.parseArray(aimStr), clazz);
     }
 
     public static String fileExtName(String fileName) {
