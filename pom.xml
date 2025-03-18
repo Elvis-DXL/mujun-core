@@ -11,8 +11,6 @@
 
     <modules>
         <module>base</module>
-        <module>log</module>
-        <module>oss</module>
     </modules>
 
     <properties>
