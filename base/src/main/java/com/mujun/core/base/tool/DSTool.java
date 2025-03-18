@@ -226,4 +226,12 @@ public final class DSTool {
         }
         return birthdayToAgeByTime(birthday, aimTime);
     }
+
+    public static String fileExtName(String fileName) {
+        if (EmptyTool.isEmpty(fileName)) {
+            return "";
+        }
+        int indexOf = fileName.lastIndexOf(".");
+        return indexOf == -1 ? "" : fileName.substring(indexOf + 1);
+    }
 }

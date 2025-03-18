@@ -1,8 +1,8 @@
 package com.mujun.core.base.tool;
 
 import com.mujun.core.base.enums.DatePattern;
-import com.mujun.core.base.enums.Gender;
 import com.mujun.core.base.enums.Regex;
+import com.mujun.core.base.enums.Gender;
 
 import java.time.LocalDate;
 
